@@ -1,0 +1,674 @@
+.header {
+    border-bottom: 1px solid rgb(231, 231, 231);
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: white;
+}
+
+.navbar {
+    height: 80px;
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+
+}
+
+.header .header__logo {
+
+}
+
+.header .header__logo .header__logo-img {
+    width: 70px;
+}
+
+.header .header__Litems {
+    margin-left: 12px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 20%);
+    padding: 0px 8px;
+    width: 600px;
+    height: 42px;
+    display: flex;
+}
+
+.header .header__Litems a {
+    display: flex;
+    align-items: center;
+}
+
+
+.header .search-input {
+    padding: 0px 12px;
+    border: none;
+    outline: none;
+    font-weight: 550;
+    flex: 1
+}
+
+.header .day {
+    position: relative;
+}
+
+.header .border-btn {
+    display: flex;
+    align-items: center;
+}
+
+.header .header__Litems .btn {
+    padding: 10px 12px;
+    background: white;
+    border: none;
+    border-left: 1px solid rgb(224, 222, 222);
+    font-weight: 550;
+    color: var(--text-color);
+    min-width: 116px;
+    height: 42px;
+    cursor: pointer;
+}
+
+.header .header__Litems .btn:focus {
+    outline: solid 2px rgba(209, 209, 209, 0.6);
+    border-radius: 8px;
+
+}
+
+.header .fa-user {
+    padding-right: 8px;
+    color: var(--text-color);
+}
+
+.header .header__Litems a {
+    text-decoration: none;
+}
+
+.header  .fa-search {
+    background: #555;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    
+}
+
+.header .header__Ritems {
+    position: absolute;
+    right: 0;
+    
+}
+
+.header .header__Ritems ul {
+    display: flex;
+    align-items: center;
+}
+
+.header .header__Ritems li {
+    float: left;
+    list-style: none;
+    padding: 0 12px;
+
+}
+
+.header .header__Ritems li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 550;
+
+}
+
+.header .header__Ritems .languege {
+    font-weight: 500;
+    border-radius: 35px;
+    background: rgb(240, 240, 240);
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+
+}
+
+.header .fa-star {
+    color: yellow;
+    background: red;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+.header .fa-sort-down {
+    margin-top: -5px;
+    padding: 0 4px;
+}
+
+.header .dayhover {
+    position: absolute;
+    right: -300px;
+    top: 110%;
+    padding: 10px 0;
+    z-index: 2;
+    background: white;
+    box-shadow: 0 0 2px rgb(202, 202, 202);
+    border-radius: 4px;
+    display: none;
+}
+
+.header .header__Litems .btn:focus ~ .dayhover {
+    display: block;
+}
+
+.header .dayhoverItems{
+    padding: 0 15px;
+}
+
+.header .dayhover-yeah {
+    display: flex;
+    align-items: center;
+    padding: 0 10px 5px 0;
+
+}
+
+.header .dayhover-yeah p {
+    padding-left: 90px;
+    font-weight: 600;
+}
+
+.header .dayhover-day {
+    width: 306px;
+
+}
+
+.header .dayhover-day .thu {
+    display: inline-block;
+    width: 40px;
+    padding: 5px 0;
+    color: black;
+    font-size: 1.2rem
+}
+
+
+
+.header .dayhover-day .btn-thu {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 2px 0;
+    border: 0;
+    background: rgb(224, 255, 224);
+    color: rgb(38, 102, 38);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.header .dayhover-day .btn-thu--0 {
+    color: white;
+    background: white;
+}
+
+.header .dayhover-day .btn-thu--disable {
+
+    background: rgb(240, 240, 240);
+    color: rgb(204, 199, 199);
+}
+
+.header .backnext {
+    background: #e6e6e6;
+    border: none;
+}
+
+.header .fa-arrow-left {
+    padding: 7px 10px;
+    color: rgb(163, 163, 163);
+}
+
+.header .dayhover-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.header .dayhover-footer button {
+    border: none;
+    padding: 5px 5px;
+    background: white;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.header .dayhover-footer .btn--primary {
+    color: rgb(216, 74, 74);
+}
+
+.header .numberguest {
+    position: relative;
+}
+
+.header .numberguest-hover {
+    position: absolute;
+    width: 318px;
+    box-shadow: 0 0 2px rgb(223, 223, 223);
+    background: white;
+    right: -114px;
+    top: 52px;
+    display: none;
+}
+
+.header .numberguest .btn:focus ~ .numberguest-hover {
+    display: block;
+}
+
+.header .numberguest-hover-items {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+
+
+
+}
+
+.header .numberguest-hover-items > p {
+    font-weight: 550;
+    color: rgb(63, 63, 63);
+}
+
+.header .numberguest-hover-items span {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.header .numberguest .plus {
+    display: flex;
+    align-items: center;
+}
+
+.header .plus p {
+    padding: 0 20px;
+}
+
+.header .plus button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid rgb(212, 212, 212);
+    color: rgb(134, 134, 134);
+
+}
+
+.header .search-new {
+    background: white;
+    color: rgb(114, 114, 114);
+    padding: 0;
+    margin-top: 14px;
+    
+}
+
+/*slider */
+
+.slider {
+    background: url(../img/slider.png) top center / contain no-repeat;
+    height: 270px;
+    margin: 42px 0;
+    border-radius: 20px;
+    margin-top: 108px;
+}
+
+.contain {
+
+}
+
+.cotain .cotain__hello {
+
+}
+
+.contain .contain-header {
+    margin-bottom: 
+}
+
+.contain .contain-header h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    padding: 5px 0;
+}
+
+
+.contain .contain-header p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: rgb(78, 78, 78);
+}
+
+.contain .contain__hotplace {
+
+}
+
+.contain .contain__hotplace-img {
+    margin: 0 -5px;
+    padding-top: 15px;
+}
+
+.contain .contain__hotplace-img-items {
+    height: 300px;
+    background-size: cover;
+    margin: 0 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.contain__hotplace-img-items > P {
+    
+}
+
+.contain .contain__endow-img {
+    margin: 0 -10px;
+    padding-top: 15px;
+}
+
+.contain .contain__endow-img-items {
+    padding-top: 50%;
+    margin: 0 10px;
+    border-radius: 15px;
+}
+
+.contain .contain__suggetsplace {
+
+}
+
+.contain .contain__suggetsplace-img {
+    margin: 0 -8px;
+    position: relative;
+}
+
+.contain .contain__suggetsplace-img-items {
+    height: 190px;
+    margin: 0 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.contain .contain__suggetsplace-img-content {
+    margin: 0 8px;
+}
+
+.contain .contain__suggetsplace-img-content h3 {
+
+    font-weight: 500;
+    color: rgb(110, 110, 110);
+    line-height: 3.6rem;
+}
+
+.contain .contain__suggetsplace-img-content p {
+    color: var(--text-color);
+    line-height: 2.4rem;
+    font-size: 1.8rem;
+}
+
+
+.contain .contain__suggetsplace-img a {
+    text-decoration: none;
+}
+
+.roll-left {
+    position: absolute;
+    top: 66px;
+    left: -22px;
+    opacity: 0.5;
+}
+
+.roll-right {
+    position: absolute;
+    top: 66px;
+    right: -22px;
+}
+
+.contain .appmobile {
+
+}
+
+.contain .appmobile__left {
+
+}
+
+.contain .appmobile__left .appmobile__left-logo {
+
+}
+
+.contain .appmobile__left-content {
+    padding-top: 15px;
+}
+
+.contain .appmobile__left-content h2 {
+    font-size: 2.8rem;
+    line-height: 4rem;
+    font-weight: 600;
+    color: var(--text-color);
+
+}
+
+.contain .appmobile__left-content p {
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    padding-top: 36px;
+}
+
+.contain .appmobile__left-download {
+    margin-top: 52px;
+}
+
+.contain .QR {
+
+}
+
+.contain .QR img {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.contain .hdh {
+    display: flex;
+    margin: auto 0;
+}
+
+.contain .hdh-items {
+    padding: 0 5px;
+    width: 50%;
+}
+
+.contain .hdh img {
+    width: 100%;
+}
+
+.contain .appmobile__right {
+    padding: 0 10px;
+}
+
+.contain .appmobile__right img {
+    width: 100%;
+}
+
+.contain .overall {
+
+    padding-top: 100px;
+}
+
+.contain .overall__contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contain .overall__contact img {
+
+    width: 200px;
+    height: 40px;
+}
+
+.contain .overall__contact-content {
+    display: flex;
+    align-items: center;
+
+}
+
+.contain .overall__contact-content i {
+    padding: 5px;    
+    font-size: 32px;
+
+}
+
+.contain .overall__contact-content-items {
+
+}
+
+.contain .overall__contact-content-items h2 {
+    font-size: 1.4rem;
+    font-weight: 570;
+    line-height: 2.8rem;
+}
+
+.contain .overall__contact-content-items p {
+    line-height: 2.4rem;
+}
+
+.contain .overall-chung {
+    padding: 0 8px;
+}
+
+.contain  h2 {
+    line-height: 4rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.contain .overall-chung p {
+    line-height: 3.2rem;
+}
+
+.colum-80 {
+    width: 80%;
+    display: flex;
+    margin-left: 20%;
+    padding: 40px 8px;
+    
+}
+
+.colum-40 {
+    width: 50%;
+}
+
+.contain .inf {
+    display: flex;
+}
+
+.contain .inf__items {
+    width: 50%;
+}
+
+.contain .inf__items-img img {
+    height: 28px;
+    width: 92px;
+    margin-top: 10px;
+
+}
+
+
+
+.them .sale{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    
+}
+
+
+
+.contain .contain__suggetsplace-img-content .them p{
+    color: rgb(62, 62, 155);
+}
+
+.contain .contain__suggetsplace-img-content .them .noikhoihanh{
+    margin-bottom: 10px;
+}
+
+.contain .contain__suggetsplace-img-content .sale p{
+    color: red;
+
+}
+
+.contain .contain__suggetsplace-img-content .sale .sale-item{
+    padding: 2px;
+    font-size: 12px;
+    background-color: red;
+    border: 50px;
+    border-radius: 5px;
+    color: white;
+}
+
+.them .book-ticker{
+    font-size: 20px;
+    padding: 10px 40px;
+    background-color: rgb(69, 69, 201);
+    border: 0;
+    color: white;
+    font-weight: 300;
+    border-radius: 5px;
+    align-items: center;
+    margin-left: 55px;
+    margin-top: 20px;
+}
+
+.them .book-ticker:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.contain .inf__items-icon .fab {
+    font-size: 30px;
+    padding: 5px 5px;
+}
+
+.them-2 {
+
+        display: block;
+        padding: 10px;
+        border: 4px solid #ffe6e6;
+    
+}
+
+.them-4{
+    padding: 10px;
+    background-color:rgba(136, 134, 134, 0.568);
+    text-align: center;
+}
+.p-min{
+    min-height: 80px;
+}
+
+.footer {
+    padding: 30px 0;
+    border-top: 1px solid rgb(177, 177, 177);
+}
+
+.footer-items {
+    text-align: center;
+}
+
+.footer-items p {
+    color: rgb(117, 117, 117);
+}
+
+.button-main{
+    position:fixed;
+    background-color: red;
+    padding: 20px;
+    left: 10px;
+    
+}
